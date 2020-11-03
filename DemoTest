@@ -1,0 +1,19 @@
+<?php
+  $arr_a = array(5,6,7);
+  $arr_b = array(3,6,10);
+  
+  $result = array();
+  
+  for ($i = 0; $i < count($arr_a); $i++) {
+    $res = $arr_a[$i] - $arr_b[$i];
+
+    if ($res > 0) {
+      array_push($result, 1);
+    } elseif( $res < 0 ){
+      array_push($result, 1);
+    }
+  }
+  
+  return $result;
+  
+?>
